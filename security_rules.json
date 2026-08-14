@@ -1,0 +1,20 @@
+{
+  "apiKeys": {
+    "SALOON_CLIENT_KEY_123": { "clientName": "SJ Saloon Mobile App", "role": "client" },
+    "ADMIN_SECRET_KEY_999": { "clientName": "Admin Portal", "role": "admin" }
+  },
+  "rules": {
+    "daily_tickets": {
+      "read": true,
+      "write": true
+    },
+    "team_chat": {
+      "read": true,
+      "write": true
+    },
+    "owner_config": {
+      "read": true,
+      "write": "role === 'admin'"
+    }
+  }
+}
